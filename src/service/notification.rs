@@ -12,12 +12,12 @@ use crate::repository::notification::NotificationRepository;
 
 pub struct NotificationService;
 impl NotificationService {
-    pub fn subscriber(product_type: &str) -> Result<SubscriberRequest>{
+    pub fn subscribe(product_type: &str) -> Result<SubscriberRequest>{
         let product_type_clone = String::from(product_type);
         return thread::spawn(move || Self::subscribe_request(product_type_clone))
             .join().unwrap();
     }
-    
+
     #[tokio::main]
     async fn subscribe_request(product_type: String) -> Result<SubscriberRequest> {
         let product_type_upper: String = product_type.to_uppercase();
