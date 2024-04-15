@@ -7,3 +7,4 @@ pub fn route_stage() -> AdHoc {
             .mount("/", routes![notification::subscribe])
     });
 }
+//sampe no 12 ya
