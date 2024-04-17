@@ -85,5 +85,20 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+##### 1.
+We use RwLock<> because it allows for parallel reads from variable, unlike Mutex<>
+
+##### 2.
+Changing a static variable isn't great because it makes the code harder to understand and maintain. Plus, keeping things unchangeable makes our code safer for threading.
 
 #### Reflection Subscriber-2
+##### 1.
+No I have not because still want to learn more about the fundamental of this tutorial.
+
+##### 2.
+
+ChatGPT
+To get more subscribers, we just make a new subscriber type without messing with the publisher.
+
+##### 3.
+No, I have not tried to make any test.
